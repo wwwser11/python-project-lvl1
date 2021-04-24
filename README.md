@@ -6,3 +6,5 @@
 ![python-project-lvl1](https://github.com/wwwser11/python-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
 https://asciinema.org/a/409596
+
+https://asciinema.org/a/409604

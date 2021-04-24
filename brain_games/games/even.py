@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
+from brain_games.games.fuctions import welcome_func
+from brain_games.games.fuctions.wrong_answer_func import wrong_answer as wrong
 
-
-def welcome_user():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?:')
-    print('Hello, {}'.format(name))
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    return name
 
 def even_game():
-    name = welcome_user()
+    name = welcome_func.welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     count_of_wins = 0
     game_mover = True
     while game_mover:
@@ -27,9 +22,10 @@ def even_game():
                 print('Correct!')
                 count_of_wins += 1
             if (number % 2) == 0 and user_answer != 'yes':
-                print(f"'{user_answer}' is wrong answer ;(.\nCorrect answer was 'yes'. Let's try again, {name}!")
+                print(wrong(user_answer, 'yes', name))
             elif (number % 2) != 0 and user_answer != 'no':
-                print(f"'{user_answer}' is wrong answer ;(. \n Correct answer was 'no'. Let's try again, {name}!")
+                print(wrong(user_answer, 'no', name))
         if count_of_wins == 3:
             print(f'Congratulations, {name}!')
             game_mover = False
+
