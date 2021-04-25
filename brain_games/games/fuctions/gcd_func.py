@@ -6,5 +6,4 @@ def gcd(first_num, second_num):
             first_num %= second_num
         else:
             second_num %= first_num
-    result = (first_num + second_num)
-    return result
+    return first_num + second_num

@@ -11,6 +11,7 @@ def calc_game():
     operator_dict = {1: '+', 2: '-', 3: '*'}
     game_gone = True
     count = 0
+    answer = ''
     while game_gone:
         random_operator = random.randint(1, 3)
         first_num = random.randint(1, 50)

@@ -28,4 +28,3 @@ def even_game():
         if count_of_wins == 3:
             print(f'Congratulations, {name}!')
             game_mover = False
-
