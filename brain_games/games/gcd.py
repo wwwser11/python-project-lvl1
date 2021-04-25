@@ -19,9 +19,9 @@ def greatest_common_divisor_game():
         user_answer = input('Your answer: ')
         if user_answer != str(real_num):
             print(wrong(user_answer, real_num, name))
+            count = 0
         else:
             print('Correct!')
             count += 1
         if count == 3:
             game_gone = False
-            count = 0
