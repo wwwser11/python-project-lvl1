@@ -6,4 +6,4 @@ def wrong_answer(x, y, name):
     :param name: name of player
     :return: text
     """
-    return f"'{x}' is wrong answer ;(.\nCorrect answer was {y}. Let's try again, {name}!"
+    return f"'{x}' is wrong answer ;(.\nCorrect answer was '{y}'. Let's try again, {name}!"

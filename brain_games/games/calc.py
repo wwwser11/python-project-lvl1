@@ -18,18 +18,17 @@ def calc_game():
         expression = f'{first_num} {operator_dict[random_operator]} {second_num}'
         print('Question: ', expression)
         if random_operator == 3:
-            answ = first_num * second_num
+            answer = first_num * second_num
         elif random_operator == 2:
-            answ = first_num - second_num
+            answer = first_num - second_num
         elif random_operator == 1:
-            answ = first_num + second_num
+            answer = first_num + second_num
         user_answer = input('Your answer: ')
-        if user_answer == str(answ):
+        if user_answer == str(answer):
             print('Correct!')
             count += 1
         else:
-            print(wrong(user_answer, answ, name))
+            print(wrong(user_answer, answer, name))
             count = 0
         if count == 3:
             game_gone = False
-calc_game()
