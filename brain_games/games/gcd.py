@@ -10,6 +10,7 @@ def greatest_common_divisor_game():
     name = welcome_func.welcome_user()
     game_gone = True
     count = 0
+    print('Find the greatest common divisor of given numbers.')
     while game_gone:
         first_num = random.randint(1, 50)
         second_num = random.randint(1, 50)
