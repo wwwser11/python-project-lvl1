@@ -18,6 +18,6 @@ def question_result():
                                    (int(list_of_progression[num]) + step_size))
     hide_num = list_of_progression[position_of_hide_num]
     list_of_progression[position_of_hide_num] = '..'
-    print('Question: ', ' '.join(list_of_progression))
+    print('Question:', ' '.join(list_of_progression))
     user_answer = prompt.string('Your answer: ')
     return user_answer, hide_num
