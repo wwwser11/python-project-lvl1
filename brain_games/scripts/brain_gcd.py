@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-
-from brain_games.games.gcd import greatest_common_divisor_game as gcd
+from brain_games.engine import engine
+from brain_games.games import gcd
 
 
 def main():
-    gcd()
+    engine(gcd)
 
 
 if __name__ == '__main__':
